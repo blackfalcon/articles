@@ -88,10 +88,23 @@ Looking back at the command line application, you should see something like the 
 >>> Change detected to: sass/style.scss
 ```
 
+It is important to understand what just happened here. Every time `sass --watch` is executed, Sass will destroy and overwrite the CSS file. If someone were to edit the CSS file without making the same edits to the Sass file, upon next compile all edits on the CSS file will be lost. The Sass files should be the single source of record for any CSS from here on out.
 
+##Error reporting
+Looking back at the command line, not only is this great to see a log of updated files, but this is where you will see error reporting if there is a bug in your code. But don't worry, you don't have to keep a close watch on the command line, errors will also appear in your browser at the top of the view.
 
+Sass' error reporting isn't all about alerting you that you did it wrong, it's very informative as well. The report will tell you the file that has the error, the line number and hint as to what was incorrect.
 
+Errors aren't just on the surface either. As you get into a more complicated Sass file structure, the error reports the full stack trace so that you can dig deep into the issue.
 
+##Sass is NOT a Rails only tool
+While there is a dependency on Ruby, in our first exercise we processed a SCSS file to CSS on our desktop. Be it Rails, PHP or .NET, there is no dependency on a development framework to use Sass.
+
+##In summary
+As you hopefully have seen in this exercise, gettingSass installed has a few small hurdles to overcome but it is achievable. Either by using the command line or a GUI desktop app, getting Sass installed and processing your first CSS is an exciting experience. In our followup article, Exercises in basic Sass features, we will cover the essential features that makes Sass such an exciting alternative to vanilla CSS.
+
+##The Author, Dale Sande
+[Dale Sande](www.dalesande.com) is a Senior UI Engineer at [GettyImages](http://www.gettyimages.com/) in Seattle, WA. Organizer for the Seattle Sass Meetup ([@SassMeetup](https://twitter.com/sassmeetup)) and creator/producer for [SassCast](http://sasscast.tumblr.com/).  Dale prides himself as being the 'bridge' of communication between the designers and developers. Having a career background as a designer, print and web, Dale has successfully transitioned to developer and strives for solutions that reduces friction and increases communication.
 
 
 
