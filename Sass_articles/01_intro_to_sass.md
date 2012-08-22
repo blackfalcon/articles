@@ -105,26 +105,3 @@ As you hopefully have seen in this exercise, gettingSass installed has a few sma
 
 ##The Author, Dale Sande
 [Dale Sande](www.dalesande.com) is a Senior UI Engineer at [GettyImages](http://www.gettyimages.com/) in Seattle, WA. Organizer for the Seattle Sass Meetup ([@SassMeetup](https://twitter.com/sassmeetup)) and creator/producer for [SassCast](http://sasscast.tumblr.com/).  Dale prides himself as being the 'bridge' of communication between the designers and developers. Having a career background as a designer, print and web, Dale has successfully transitioned to developer and strives for solutions that reduces friction and increases communication.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
