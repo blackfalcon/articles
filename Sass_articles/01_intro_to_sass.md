@@ -43,8 +43,50 @@ Many of the examples you will see on other sites tend to favor the SCSS syntax a
 ##What is a Gem?
 The first problem a newcomer to Sass encounters is that Sass is not a commonly supported language; it needs to be installed. Going to the Sass site, the instructions are to install this thing called a 'Ruby Gem'? A Ruby Gem is a library of code that is needed to perform an operation. This leads us to the second problem, Sass has a dependency on the Ruby language. For some, this can be a real issue. What if you?ve never used Ruby or don?t understand the command line? How can you use Sass without learning all of the developer stuff?
 
+##GUI Sass compilers
+If you don't want to bother with the command line process of using Sass, then read this short article about how to set up a GUI Sass compiler. The GUI compilers do the same thing as the command line, but you?ll never have to crack open terminal.
 
+Once, you've got a GUI compiler installed, come back and learn about all the great features that Sass has to offer. You'll be able to follow all the exercises, but you won't have to touch the command line.
 
+If you are comfortable with the command line and want to dive right in, continue on!
+
+##Installing Sass from the command line
+Assuming you are on a Mac or Unix flavored machine with Ruby installed and running RVM (typical Ruby development environment configuration), the process is quite simple. Using the command line app, called Terminal, enter the following:
+
+`$ gem install sass`
+
+If you are running a Mac with the Darwin version of Ruby installed and not running RVM, there is a subtle difference.
+
+`$ sudo gem install sass` This command will require you to enter the admin password for that computer.
+
+Macs come preinstalled with Ruby, but Windows does not. In order to get a setup like this going on Windows you may want to look at installing [Ruby for Windows](http://rubyinstaller.org/).
+
+Once the gem is installed, you have all that you need to start processing your Sass.
+
+##Your first processed CSS
+Once Sass is installed, it's primary role is to watch for updated Sass files and convert them to CSS.
+
+For this exercise let's create a folder on the desktop and call it sass-test-project. Inside that folder create two new folders, one called sass and the other stylesheets. Inside the Sass folder, let's create a file called style.scss.
+
+Going back to the command line, we need to do a couple of things. First, change directories so that you are inside the projects folder you created. The example would be:
+
+`$ cd Desktop/sass-test-project/`
+
+Then enter the following command to launch the Sass watching application.
+
+`sass --watch sass:stylesheets`
+
+What is this command doing? `sass --watch` is the base command, there isn't anything to alter here. But the second part `sass:stylesheets`, these are the folders we just set up. Using this format, Sass will watch for any .scss file in the sass folder, process and create a new CSS file in the stylesheets folder.
+
+And that's it. Open your text editor, open the style.scss file and add a selector with some declarations like you would any other CSS file. Then save the edits. When you are done, go back into the projects folder, open the 'Stylesheets' folder and there will be style.css waiting for you with the newly processed SCSS into CSS.
+
+Looking back at the command line application, you should see something like the following:
+
+```
+>>> Change detected to: /Users/[you]/Desktop/sass-test-project/sass/style.scss
+  overwrite stylesheets/style.css
+>>> Change detected to: sass/style.scss
+```
 
 
 
