@@ -7,7 +7,7 @@ Having come from a designer's background and transitioning into more of a develo
 [Are You a Right-Brained or Left-Brained Designer?](http://goo.gl/LodHH)
 
 ##Creative problem solvers
-The very idea that developers are solely right brainers comes from some antiquated mental manifestation of '*programmers*' of the 50's. Modern developers are extremely creative individuals. Their output may not be in paintings, charcoal drawings or Photoshop docs, but their output is no less creative. 
+The very idea that developers are solely right-brainers comes from some antiquated mental manifestation of *'programmers'* of the 50's. Modern developers are extremely creative individuals. Their output may not be paintings, charcoal drawings or Photoshop docs, but their output is no less creative. 
 
 The world of app and web development is a crazy new world creating an amazing array of new problems to solve every day, both technologically and creatively. In this new work space we need individuals who are willing to blur the lines of *left* and *right* brained individuals. I guess people I like to call *whole-brained*. Are you *whole-brained*? I think you are. 
 
@@ -21,7 +21,7 @@ Smart app/web development teams will either use or create a series of frameworks
 But then again, there is this *just in time* principal I was talking about. This concept is that you don't build things till you need them. In a lot of ways, this makes perfect sense. But in some ways, this is very hard to deliver. Many creative teams struggle with what this means to them. 
 
 ##The emergence of the desi-gineer
-New worlds need new people to solve new problems. We as professionals need to evolve into the new roles that our industry demands of us. Sometimes this means creating new roles and at times this means that we need to combine the skills of others to create something amazing. 
+New worlds need new people to solve new problems. We as professionals need to evolve into the new roles that our industry demands of us. Combine skills to create something amazing. 
 
 Let's face it, the UI of modern apps is a complicated beast. Where it was typically custom that any app developer would simply assume the role of developing the UI, many shops are waking up to the idea that this is a discipline of it's own. Browsers, platforms, devices and the growing array of supporting technologies all growing at a mind boggling rate. Performance factors, responsive, adaptive, progressive enhancement, unique problems that require their own special attention. 
 
