@@ -47,23 +47,31 @@ Now that we have established the core leadership of the design team and redefine
 
 To some, this is a radical shift in thinking. The role of a designer is typically to assume ownership of all aesthetics and interactions. To think through all the parts of the design, what is known and to make new shit up for the stuff that is unknown. But what was missing from that list is the interaction and communication with the developers on the project. Sure some will say that they talk with the developers about constraints and technological requirements, but are they really understanding the underlying nuances of what is happening? I would argue that most of the time, no. What they are doing is designing from a perspective too far removed form the reality of the moment. 
 
-##Story driven design, designers in the trenches 
+##Story driven development, designers in the trenches 
 > *Human sacrifice, dogs and cats living together... mass hysteria!*
 
 *Dr. Peter Venkman*
 
-We've established a few new and somewhat radical concepts here. These very ideas will challenge the very foundation of many development and design shops around the world. Probably the most radical idea is the concept of a distributed design model. Depending on how your design team works today, this may be a hard pill to swallow. 
+We've established a few new and somewhat radical concepts here. These ideas will challenge the very foundation of many development and design shops around the world. Probably the most radical idea is the concept of a distributed design model. Depending on how your design team works today, this may be a hard pill to swallow. Call me crazy, but I see this as a healthy and liberating way of doing work. If your passion is aesthetics, user studies, understandings of emotional interactions, establishing and maintaining the brand, then that is what you should do. If your passions lies more in the execution of resources with the creative freedom to design new interactions with clear understanding of the restrictions and limitations of the environment form which your designs will be executed, then that is what you should so. Neither role is to be frowned on or hailed. Each role is part of a team who's goal is to make awesome experiences for their users. But it is these separation of roles that is needed to make this agile *just in time* world work. 
 
 Let's take a ride on the Trolley to the Neighborhood of Make Believe. Let's imagine that all the pieces are place, all the managers are on board, and it's time to review some stories on the kanban board. 
 
-Imagine that the team is all in a room looking at the backlog of work to be done. It is time to pull over some new stories, review them for deliverables and estimate the effort needed to execute. The story is dissected by a senior developer and there is one of those insurgent design teams in there too. There is a clear evaluation as to what is needed and what the level of effort is needed. 
+Imagine if you will, a team all in a room looking at the backlog of work to be done. It is time to pull over some new stories, review them for deliverables and estimate the effort needed to execute. The story is reviewed by a senior app developer, a desi-gineer and one of those insurgent designers too. There is a clear evaluation as to what is needed and what the level of effort is needed. 
 
-When it comes to the UI deliverable of the story, the design insurgent team made up of a designer and one of those desi-gineers, would be responsible to asses the work. Now, this is where I see things getting a little interesting. Depending on the level of the UI work needed this could result in one of three things happening. 
+When it comes to the UI deliverable of the story, the designer and a desi-gineer would be responsible to asses the work. Now, this is where I see things getting very interesting. Depending on the level of the UI work needed this could result in one of three things happening. 
 
-* The designer sketches out new UI/UX options based on the established style guide and works a desi-gineer or app developer to deliver the new UI/UX
+* The designer sketches out new UI/UX options based on the established style guide and works with a desi-gineer or app developer to deliver the new UI/UX
 * The desi-gineer executes a new UI/UX at the direction of the insurgent designer
 * The developer executes the new UI/UX at the direction of the insurgent designer following patterns set by the designer and the desi-gineer
 
-What you will see here is less time in graphic applications and more time designing in real code. Let's be frank here, with all the experience variations we need to deal with these days, trying to do all the design work in tools like Photoshop is an amazing time sink. And in today's fast paced agile world, we don't have the luxury of time. If you can literally go from sketch to code and be able to execute code in multiple variations in a single session, think of the development savings to be had. 
+What you will see here is less time in graphic applications and more time designing in real code. Let's be frank here, with all the experience variations we need to deal with these days, trying to do all the design work in tools like Photoshop disconnected from the developers is an amazing time sink. The review cycles are excruciatingly slow and in today's budget focused and fast paced agile world, we can't afford this luxury of time. The designer's experience of working side-by-side with a desi-gineer or developer to create new experiences in real time on multiple devices in varying formats, is full of so much win, I can't imagine not doing this. Well, I can, but I don't want to.
 
 What we have here is a distribution of design responsibilities across the organization. That's the important part. Design is not a silo. Design is not a single role in the org. Design is a responsibility that can be shared. This is important as I have never seen an org where there are an equal number of designers as there are developers. Think of the increased awesome you will get if you can empower all levels of the development teams to be included in the design process.
+
+
+
+
+
+
+
+
