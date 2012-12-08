@@ -34,7 +34,7 @@ If you come across one of these desi-gineers, my suggestion is to hold on tightl
 ##Design teams, your future is before you
 This is where our story gets interesting. So far we realized that developers are just as creative as designers and we officially acknowledged the existence of the *whole-brained* person. Next we dipped our toes into this thing called *agile* and last we discussed the new role of the desi-gineer. When you put this all together, what does this mean?
 
-In all corners of professional industry there are designers who don't like where the winds of change are blowing. There is a looming aspect of this new world that threatens their way of life. In some ways I sympathize, in others, I say evolve or die. Now there are many designers in the world that I would say that they have nothing two worry about. Your skills are magical, you have talents that are amazing. Your visually creative skills are superior and to you I say, your role in this world is already solidified and your identity as a designer is not being threatened. But I do think that your role in interactive design needs to be rethought. Your skills are best suited for creating and owning the brand. You are needed more in the role of creating the new aesthetics, engineering the very foundation that all future designs will springboard from, holding the line and maintaining the core spirit of the design. Basically you are need the most in creating the new design guide and a key player in documenting the uses of these new design elements. This role is very important. Without it, designs go astray, consistency is lost and the true vision becomes clouded amongst then many forked versions and influx of personal influence.
+In all corners of professional industry there are designers who don't like where the winds of change are blowing. There is a looming aspect of this new world that threatens their way of life. In some ways I sympathize, in others, I say evolve or die. Now there are many designers in the world that I would say that they have nothing to worry about. Your skills are magical, you have talents that are amazing. Your visually creative skills are superior and to you I say, your role in this world is already solidified and your identity as a designer is not being threatened. But I do think that your role in interactive design needs to be rethought. Your skills are best suited for creating and owning the brand. You are needed more in the role of creating the new aesthetics, engineering the very foundation that all future designs will springboard from, holding the line and maintaining the core spirit of the design. Basically you are need the most in creating the new design guide and a key player in documenting the uses of these new design elements. This role is very important. Without it, designs go astray, consistency is lost and the true vision becomes clouded amongst the many forked versions and influx of personal influence.
 
 Now that we have established the core leadership of the design team and redefined their role, we now need to invent and deploy a new design team. A new insurgency of designers if you will. A team that will work side-by-side with the developers in the trenches, in the very moment of the story that is being developed. This new design team not only creates new experiences that will honor the core brand, but also become intimate with the restrictions and limitations of the app development side of the operation. This designer role is more design execution, engineering if you will. Their role will pull the design elements created by the core design leadership and execute the *just in time* deliverables that the development teams needs to complete the body of work assigned. The I.A., the flow and the UX layouts. 
 
@@ -57,26 +57,4 @@ When it comes to the UI deliverable of the story, the design insurgent team made
 
 What you will see here is less time in graphic applications and more time designing in real code. Let's be frank here, with all the experience variations we need to deal with these days, trying to do all the design work in tools like Photoshop is an amazing time sink. And in today's fast paced agile world, we don't have the luxury of time. If you can literally go from sketch to code and be able to execute code in multiple variations in a single session, think of the development savings to be had. 
 
-What we have here is a distribution of design responsibilities across the organization. That's the important part. Design is not a silo. Design is not a single role in the org. Design is a responsibility that can be shared. This is important as I have never seen an org where there are an equal number of designers as there are developers. Think of the increased awesome you will get if you can empower all levels of the development teams to be included in the design process. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+What we have here is a distribution of design responsibilities across the organization. That's the important part. Design is not a silo. Design is not a single role in the org. Design is a responsibility that can be shared. This is important as I have never seen an org where there are an equal number of designers as there are developers. Think of the increased awesome you will get if you can empower all levels of the development teams to be included in the design process.
