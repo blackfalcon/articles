@@ -1,6 +1,6 @@
 #A Designer in a Developer's World
 
-__*Having been a designer and transitioning into a coder via UI development, I have always had a fondness, or obsession if you will, for making the relationships between developers and designers better. Each side desperately seeking their identity in an overlapping world, with their own processes and solutions. But having learned the principals of agile development, I see huge wins to be gained. Design isn't just for designers.*__
+__*Having been a designer and transitioning into a coder via UI development, I have always had a fondness, or obsession if you will, for making the relationships between developers and designers better. Each side desperately seeking their identity in an overlapping world, with their own processes and solutions. But having learned the principles of agile development, I see huge wins to be gained. Design isn't just for designers.*__
 
 Agile is changing the way we do business. I did a huge spec doc once. Once. Never to be repeated. I won't go into all the details about how agile works, I just want to focus on the lean agile concept of *just in time*.
 
