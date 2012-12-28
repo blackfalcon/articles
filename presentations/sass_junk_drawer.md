@@ -50,31 +50,47 @@ sass/
 ```
 
 ###Sass partials and the manifest
-[Partials](http://goo.gl/iRHu0) are a simple and powerful weapon in the Sass arsenal. Simply put, any file that has an *underscore* before the name, `_partialName.scss`, will not be processed into a `.css` file unless it is imported into a file that will be processed into CSS.  
+[Partials](http://goo.gl/iRHu0) are a simple and powerful weapon in the Sass arsenal. Simply put, any file that has an *underscore* before the name, `_partialName.scss`, will __not__ be processed into a `.css` file by itself. It is required to be imported into a file that __will__ be processed into CSS.  
 
 ###Manifest files
-In this file structure example, the only file that is processed into CSS is the `style.scss` manifest.  It's here where all your elements, modules, views, configs, mixing, extends, etc. are all imported and processed into a stylesheet. It is important that this file be kept void of any CSS rules. Rules at this level is a poor organizational technique and speaks to unnecessary randomization of CSS rules.  
+In this file structure example, the only file that is processed into CSS is the `style.scss` manifest.  It's here where all your custom add-ons, configs, elements, modules, views, mixins, extends, etc., are all imported and processed into a production stylesheet. It is important that this file be kept void of any CSS rules. Rules at this level is a poor organizational habit and speaks to unnecessary randomization of CSS rules.  
 
-This is not to say that `style.scss` is the only place for a manifest. Manifests can import other manifests. Here, like in other places, I would follow *The Inception Rule: don’t go more than four levels deep.* That is if you want to keep your sanity. 
+This is not to say that `style.scss` is the only Sass manifest file. Manifests can import other manifests. As seen in this [example manifest](http://goo.gl/4bO7j) from the Toadstool style guide framework, sub-directories can also contain manifest directories. This pattern helps to keep the `style.css` manifest from becoming overwhelming to manage as well to keep sub-directory files nicely organized.
 
-As seen in this [example manifest](http://goo.gl/4bO7j) from the Toadstool style guide framework, sub-directories can also contain manifest directories. This pattern helps to keep the `style.css` manifest from becoming overwhelming to manage as well to keep sub-directory files nicely organized.
+Here I would especially follow *The Inception Rule: don’t go more than four levels deep.* That is if you want to keep your sanity. Going beyond this rule will increase unnecessary complexity in your app.
 
-####Manual manifest files or glob imports
+####Manual manifest files or glob-imports
 *Manual* manifests are just that, manual management of imported Sass files from sub-directories. This is a good practice to follow when you need specific control over the inheritance of files. Example, rule A needs to come before rule B in the output cascade. 
 
 *Glob-imports* on the other hand is a way for you to simply point to a directory in your manifest, `@import "directory/*";` and Sass will import all the files in alphabetical order. This is great for a directory of mixins or functions that simply need to be loaded in memory for Sass to process the CSS. If you want to use the *glob* function but require a specific order, a naming convention like `_01_mixin.scss` could work as well. 
 
-While *glob-imports* is a feature available to Rails projects, this is not a native feature of Sass. If you are not developing a Rails project, [Chris Eppstein](https://github.com/chriseppstein) wrote a [RubyGem](http://goo.gl/ww5Wo) that can be used with Sass or Compass projects. 
+While *glob-import* is a feature available to Rails projects, this is not a native feature of Sass. If you are not developing a Rails project, [Chris Eppstein](https://github.com/chriseppstein) wrote a [RubyGem](http://goo.gl/ww5Wo) that can be used with Sass or Compass projects. 
 
 ###Configurable options
-An advanced concept of using a Sass structure like this is using a `_config.scss` file to manage the smart defaults for your UI. Nested in the module directories, `@mixin` and `@extend` rules can be engineered to take advantage of these configurable options. 
+An advanced concept of using a Sass structure like this is using a `_config.scss` file to manage the [smart defaults](http://goo.gl/BZOUE) for your UI. Nested in the module directories, `@mixin` and `@extend` rules can be engineered to take advantage of these configurable options. 
 
-Like the manifest files, no CSS is ever rendered from the `_config.scss` file. It should only be included in the `style.scss` *Sass manifest* file. 
+In the same way as manifest files, no CSS is ever processed from the `_config.scss` file. It should only be included in a processed *Sass manifest* file, such as `style.scss`. It is also important to import this file at the top of the `style.scss` file so that all imported code thereafter will be able to take advantage of these configurable values. 
 
 ###Element partials
-`_buttons.scss`, `_design.scss`, `_forms.scss`, `_reset.scss` and `_typography.scss` all contain Sass rules that will process into CSS. While they can import `@mixin` and `@extend` rules, it is important to remember that these files are engineered to output CSS. 
+It is in the elemental partials that we start to get to work. Writing Sass rules that will create your UI foundational layer of the site/app. `_buttons.scss`, `_design.scss`, `_forms.scss`, `_reset.scss` and `_typography.scss` all contain Sass rules that will process into CSS. While they will import other *partials*, `@mixin` and `@extend` rules, it is important to remember that these files are engineered __only to output__ CSS.  
 
+It is important to understand that these *element partials* are logic-less layers. Mixins, placeholder selectors and custom functions should be abstracted out into a sub-directories for portability and scaleability.
 
+Let's take __buttons__ for example. It's amazing that something as simple as buttons can be such an amazingly complex architecture. Between gradients, :hover and :active states, one could go a little mad. Thankfully, there are people out there that have tried to solve this problem for you and there are a number of really awesome [Compass Extensions](http://goo.gl/qN4IZ) you can install to help you get started. So it is in this partial that we only write our button styles. 
+
+```scss
+button, a.button {
+  @inlcude button(#d22);
+}
+```
+
+###Custom mixins, placeholder selectors and functions organization 
+Using our button example again, let's say that you need to roll your own. In the file structure there is a corresponding `buttons/` directory where you will keep your `_mixin.scss` and `_extend.scss` and custom functions. 
+
+Keeping these functional Sass files separate from the actual processed CSS rules is an important concept. This will improve readability and search-ability of your code. Patterns like placing mixing in the same file as the CSS rules leads to overly complex files to scan. Not to mention opportunities for accidental pollution of your processed CSS. For example, you have a mixin inside a document that contains CSS rules and you need that mixin available from another resource, importing partial will cause your CSS rules to be __duplicated__. And that's bad. 
+
+##Modules and UI patterns
+Now that we have established the architecture of our UI foundation, it is time to start assembling some modules. In essence, a module is an assembly of foundational elements with enough CSS to hold it together that is exclusive to a particular interaction of the application. Modules will come in all shapes and sizes. Larger modules may also consist of smaller modules or UI patterns.  
 
 
 
