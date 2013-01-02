@@ -1,5 +1,5 @@
 #Clean out your Sass junk-drawer
-__*CSS has had a long and sorted past. With every project, a developer never sets out with the goal of making a complete and total mess of things. Their intention is not to build something that is practically illegible, impractical to maintain and is limited in scale. But somehow, someway this is where many inevitably end up. Luckily, all is not lost. With some simple strategies, organizational methods and out-of-the box tools, we can really help get that junk-drawer inline.*__ 
+__*CSS has had a long and sorted past. A developer never sets out with the goal of making a complete and total mess of things. Their intention is not to build something that is practically illegible, impractical to maintain and is limited in scale. But somehow, this is where many inevitably end up. Luckily, all is not lost. With some simple strategies, organizational methods and out-of-the box tools, we can really help get that junk-drawer inline.*__ 
 
 For many of us getting started with Sass, at one time or another have created a *junk-drawer* of files. For most, this was a rookie mistake, but for others, this is a continuing issue with our architecture and file management techniques. Sass doesn't come with any real rules for file management so developers are pretty much left to their own devices.
 
@@ -19,7 +19,7 @@ Between the views, duplicated code began to reveal itself. Attempts to abstract 
 
 In other attempts to abstract away front he view, some developers have tried to organize their files based on actions. If the visual elements are part of an action, making directories based on these actions makes sense, right? Sadly, this quickly falls apart as not all UI elements can be easily categorized this way. Random files again populate the directory, universal widgets, plug-ins, and custom mixins begin to collect. Once again suffering from the *junk-drawer* effect. 
 
-##Learn from our mistakes
+##Learning from our mistakes
 Life is about journeys. It was during my journey of *doing it wrong* that I began to see clarity. Ironically, I had the right solution all along, but didn't realize it. While part of a team developing an enterprise CMS, our process was to decompose a site's UI to it's lowest common elements. From those elements we could then build modules and then finally assemble the view templates. Each step building on the previous. Although my stylesheet management techniques weren't perfected, my conceptualization of UI abstraction was. 
 
 Working with a new team, sans a CMS, I went into the project with the same conceptual understanding, but the outcome was drastically different. Post launch, I sat down and analyzed the code I wrote. I came to the realization that we were engineering our CSS from __entirely the wrong perspective__. We were engineering our UIs from the full page perspective. Building visual elements scoped to *a specific* view and all of our code was being built from the *outside-in*. 
@@ -52,7 +52,7 @@ sass/
 ##Sass partials and the manifest
 [Partials](http://goo.gl/iRHu0) are a simple and powerful weapon in the Sass arsenal. Simply put, any file that has an *underscore* before the name, `_partialName.scss`, will __not__ be processed into a `.css` file by itself. It is required to be imported into a file that __will__ be processed into CSS.  
 
-##Manifest files
+###Manifest files
 In this file structure example, the only file that is processed into CSS is the `style.scss` manifest.  It's here where all your custom add-ons, configs, elements, modules, views, mixins, extends, etc., are all [imported](http://goo.gl/WhLho) and processed into a production stylesheet. It is important that this file be kept void of any CSS rules. 
 
 This is not to say that `style.scss` is the only Sass manifest file. Manifests can import other manifests as seen in this [example manifest](http://goo.gl/Jhedp) from the Toadstool style guide framework. Manifests can import all the files within a sub-directory, a pattern that helps to keep the `style.css` manifest easy to read while keeping sub-directory files nicely organized.
@@ -123,8 +123,14 @@ Sub-modules of a UI, in most cases, will contain similar characteristics. This c
 
 All modules should be names-spaced by the semantic name of the module itself. `.registration {}` or `.purchase {}` for example. If the sub-module is exclusive to the primary module then it would extend the name like so, `.purahcse_summary {}`. It is important to keep the selectors as shallow as possible in encourage reuse throughout the application without additional engineering. Keep in mind that at the level we are working at, we are simply scoped to a module and modules are not exclusive to any view in the application. 
 
+##Assemble the layout
+Prior to this process, it was at the layout where we started. Abstracted concepts like modules and elements were extremely difficult to do and typically overlooked. By completing our UI development journey with the layout, get to take advantage of all of our hard work so far. Out layout Sass files should contain no more information then is needed to assemble a series of modules and elements. Imagine a sketch with gray boxes in the view, this is the document that creates that structure. Elements are never defined and modules are never engineered.
 
+Here I never advocate for sub-directories per layout as things should never get that complex. At this level, assembling the layout should be taking 100% advantage of the elements and modules already engineered. If you find yourself involved in more complex development at this phase, I would argue that you need to review your work before engaging in more complex levels of code. 
 
+Typically a layout Sass file will be names by the semantic meaning of the view. In a MVC app, a great convention is either use the name of the `controller` or the `layout` template file and append the word `_container` or `_layout`. An example would be `sessions_container.scss` or `sessions_layout.scss`. To keep things simple, I would then scope all the presentational Sass in a document by the same name, `.sessions_container {}` for example. Using this class name can either be achieved by dynamically adding the class to the `<body>` tag when the view renders or creating multiple layout templates with a static class applied. Which ever works best for your application.
+
+Our goal with layout Sass files is to place control into the hands of the CSS itself rather then depending on presentational classes in our markup. This becomes even more important when considering __mobile first__ and __responsive web design__ strategies.
 
 
 
