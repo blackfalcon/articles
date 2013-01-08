@@ -11,9 +11,9 @@ In the internet age, computer languages have started moving at a pace unparallel
 At times I think back to the early 90s when I started designing/developing web sites. I think of the primitive tools used, the code patterns we clung too and antiquated languages we coded with. We aspired to make things better and become more efficient at our jobs. We began to crate processes, identify shortcomings and engineer newer and better solutions. In short, we innovated. 
 
 ##Who really writes HTML?
-Browsers still require basically the same HTML and CSS that we were given in the early 90s. These core languages to the web have seen little in in the way of major revisions. Short of making a quick demo, who really writes HTML anymore? As soon as the shit gets real, it's not HTML anymore. There is HTML'ish syntax in the presentation you are developing, but it's not strictly HTML anymore. 
+Browsers still require basically the same HTML and CSS that we were given in the early 90s. These core languages to the web have seen little in in the way of major revisions. Short of making a quick demo, who really writes HTML anymore? As soon as the shit gets real, it's not HTML. Sure there is HTML'ish syntax in the presentation, but it's not strictly HTML. 
 
-HTML has given way to [templating languages](http://goo.gl/BymYX) and there are a lot of them. Every primary development language has it's own flavor of tempting HTML. And yet, there was never the issue raised if we needed these or not, it was simply excepted. 
+HTML has given way to [templating languages](http://goo.gl/BymYX) and there are a lot of them. Every primary development language has it's own flavor of templating HTML. And yet, there was never the issue raised if we needed these or not, it was simply excepted. Hell do you even know what PHP stands for? Yup, it's PHP: Hypertext Preprocessor. [It's true.](http://en.wikipedia.org/wiki/PHP)
 
 ##Forbidden territory
 Why is CSS perceived as special? After all, there is nothing special about the language that precludes itself from the HTML templating argument. While we are required to produce static CSS, there is no law that states that we must write all our code this way. And I would argue that the requirement for static CSS is a moving target as well. 
