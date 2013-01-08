@@ -3,7 +3,7 @@ __*[Draft Episode 15: Why Sass?](http://goo.gl/ecdav)* raises a very interesting
 
 For the most part, __no__ you don't __need__ Sass to get work done. The internet has been around for a long time and CSS was here WAY before Sass and people were able to get work done. 
 
-But you can have the same argument for any development languages, innovations or advancements. Do we *need* Python, Ruby, .NET, Clojure, Node or Dart? After all we have C++, Objective-C, Perl, PHP, Java and Javascript. Do we need new languages to do the same things? But the argument there is, are we really doing the same things?  
+You can have the same argument for any development language, innovation or advancement. Do we *need* Python, Ruby, .NET, Clojure, Node or Dart? After all we have C++, Objective-C, Perl, PHP, Java and Javascript. Do we need new languages to do the same things? But the argument there is, are we really doing the same things?  
 
 ##Innovation pushes us all forward
 In the internet age, computer languages have started moving at a pace unparalleled by any other time in computing history. Why? It's an easy assumption to say that more people are involved in solving the problem. You can also say that there are more people pooling together with amazing talents to solve unique issues. And then there is the old proverb, *"Necessity is the mother of invention."* 
