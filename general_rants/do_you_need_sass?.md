@@ -24,17 +24,8 @@ I decree this notion that *CSS is off limits* is __false__.
 __Yes!__ I profoundly say that __we__ as a community of modern web developers __need Sass__. We need Sass from the perspective that it is pushing the conversation forward as to how we write code. Sure there is the W3C for maintaining standards and then Webkit pushing the boundaries on features, but the way CSS is written, edited and managed is not really being rethought. Sass challenges that thought.
 
 ##We need a modern CSS
-Web sites and apps have come a long way in the internet's short lifespan. While engineering HTML has been minimized by it's grand number of templating languages, before Sass there was nothing to help us with CSS. Stylesheet documents continue to grow in size, increasing pressure on maintainability and scaleability. CSS in it's current spec does not provide any solutions for manipulating, modularizing or maintaining code. 
+Web sites and apps have come a long way in the internet's short lifespan. While engineering HTML has been minimized by it's grand number of templating languages, before Sass there was nothing to help us with CSS. Stylesheet documents continue to grow in size, increasing complexity on maintainability and scaleability. CSS in it's current spec does not provide any solutions for manipulating, modularizing or maintaining code. 
 
-Sass is part of a family of languages that innovate and push for evolution. Sass is written not by spec creators or boards that 'discuss' what needs to happen. Sass is written by talented developers that USE CSS and understand it's shortcomings. Sass is engineered by people who don't intend to replace CSS, but make it useable in today's development environment.   
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+Sass is part of a family of languages that innovate and push for evolution. Sass is written not by spec creators or boards that 'discuss' what needs to happen. Sass is written by talented developers that use CSS and understand it's shortcomings. Sass is engineered by people who don't intend to replace CSS, but intend to address shortcomings in today's development environment.
 
+And with the [W3C watching](http://goo.gl/vMVX7), you can be sure if you aren't writing Sass today, you will be tomorrow. 
